@@ -14,6 +14,17 @@
     "dummy": 0
   },
   "resources": {
-    "media": []
+    "media": [
+      {
+        "type": "raw",
+        "name": "WAVE_IMAGE",
+        "file": "wave.pdc"
+      },
+      {
+        "type": "raw",
+        "name": "CLOUD_IMAGE",
+        "file": "Pebble_25x25_Partly_cloudy.pdc"
+      }
+    ]
   }
 }
