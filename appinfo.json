@@ -1,0 +1,19 @@
+{
+  "uuid": "2b722062-6fb7-4743-9925-cce4716a7809",
+  "shortName": "surf-report",
+  "longName": "surf-report",
+  "companyName": "io.jon-bassi.github",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
+  "enableMultiJS": true,
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
