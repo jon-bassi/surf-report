@@ -92,7 +92,7 @@ static void window_load(Window *window) {
 
   // create text layer with specific bounds
   text_layer = text_layer_create(GRect(0, PBL_IF_ROUND_ELSE(70,116), bounds.size.w, 40));
-  date_layer = text_layer_create(GRect(bounds.size.w / 2 - 13, PBL_IF_ROUND_ELSE(50,144), bounds.size.w / 2, 30));
+  date_layer = text_layer_create(GRect(bounds.size.w / 2 - 22, PBL_IF_ROUND_ELSE(50,144), bounds.size.w / 2 + 22, 30));
 
 
   text_layer_set_background_color(text_layer, GColorClear);
@@ -103,10 +103,10 @@ static void window_load(Window *window) {
 
   //text_layer_set_text(text_layer, "testing");
   text_layer_set_font(text_layer, fonts_get_system_font(FONT_KEY_LECO_26_BOLD_NUMBERS_AM_PM));
-  text_layer_set_font(date_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18));
+  text_layer_set_font(date_layer, fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD));
 
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
-  text_layer_set_text_alignment(date_layer, GTextAlignmentCenter);
+  text_layer_set_text_alignment(date_layer, GTextAlignmentLeft);
 
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
   layer_add_child(window_layer, text_layer_get_layer(date_layer));
@@ -154,7 +154,7 @@ static void window_load(Window *window) {
   /*
    *  wave things
    */
-  wave_canvas_layer = layer_create(GRect(-4, 24, bounds.size.w, bounds.size.h));
+  wave_canvas_layer = layer_create(GRect(-1, -10, bounds.size.w, bounds.size.h));
   layer_set_update_proc(wave_canvas_layer, update_proc_wave);
   layer_add_child(window_layer, wave_canvas_layer);
 
